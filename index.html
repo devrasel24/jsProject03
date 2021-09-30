@@ -7,28 +7,41 @@
     <title>Class 03</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <style>
+        h1 {
+	    width: 537px;
+    	margin: auto;
+	    font-size: 48px;
+}
+    </style>
+
+
 </head>
 <body>
     
 <div class="feild">
+
     <div class="feildArea">
         <input type="text" placeholder="Input You All Number">
-        <button class="minusIcon"> <i class="fas fa-times"></i></button>
+        <button class="minusIcon">&times;</button>
     </div>
     <button class="plusIcon"> <i class="fas fa-plus"></i> </button>
-</div>
-<div class="div">
-    <h2>test</h2>
-</div>
 
 
+</div>
+
+<!-- if And Else Start -->
+
+ <h1> </h1>
 
 
 <script src="./assest/js/jquery-3.6.0.min.js"></script>
 <script>
 
+// input remove and add
+
 $('.plusIcon').click(function(){
-    $('.feild').before(`<div class="feildArea">
+    $('.feild').prepend(`<div class="feildArea">
         <input type="text" placeholder="Input You All Number">
         <span class="plusIcon"> <i class="fas fa-times"></i> </span><br>  
     </div>`);
@@ -38,6 +51,26 @@ $(document).on('click', '.minusIcon', function(){
     $(this).parent('.feildArea').remove();
 });
 
+// input remove and add enn
+
+// if and else start
+
+let marks = prompt("enter you marks");
+
+if( marks >=0 && marks <= 32){
+    $('h1').html('you are fail');
+
+}else if(marks >= 33 && marks <=60 ){
+    $('h1').html('you got A-');
+}else{
+    $('h1').html('Error number');
+}
+
+
+
+
+
+// if and else end
 
 </script>
 </body>
