@@ -1,0 +1,30 @@
+body{
+    margin: 150px;
+}
+
+.feild{
+    width: 250px;
+    background-color: rgba(236, 231, 231, 0.904);
+    padding: 18px 24px;
+   }
+   .feildArea {
+	display: flex;
+	margin-bottom: 11px;
+}
+  .feildArea input {
+      padding: 7px 9px;
+      width: 198px;
+  }
+  .plusIcon {
+      padding: 5px;
+      background: #fff;
+      cursor: pointer;
+  }
+  .minusIcon {
+      padding: 5px 10px;
+      background: #fff;
+      cursor: pointer;
+      margin-top: 15px;
+      display: inline-block;
+  }
+  

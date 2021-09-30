@@ -1,0 +1,30 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 200px;
+}
+a{
+    width: 300px;
+    padding: 20px;
+    color: #111;
+    background-color: #ddd;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+p{
+    width: 300px;
+    background-color: tomato;
+    color: #fff;
+    padding: 10px 20px;
+    /* display: none; */
+}
+button {
+	padding: 9px 40px;
+	font-size: 24px;
+	font-weight: 600;
+}

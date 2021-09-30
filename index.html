@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 03</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+<body>
+    
+<div class="feild">
+    <div class="feildArea">
+        <input type="text" placeholder="Input You All Number">
+        <button class="minusIcon"> <i class="fas fa-times"></i></button>
+    </div>
+    <button class="plusIcon"> <i class="fas fa-plus"></i> </button>
+</div>
+
+
+
+
+<script src="./assest/js/jquery-3.6.0.min.js"></script>
+<script>
+
+$('.plusIcon').click(function(){
+    $('.feild').before(`<div class="feildArea">
+        <input type="text" placeholder="Input You All Number">
+        <span class="plusIcon"> <i class="fas fa-times"></i> </span><br>  
+    </div>`);
+});
+
+$(document).on('click', '.minusIcon', function(){
+    $(this).parent('.feildArea').remove();
+});
+
+
+</script>
+</body>
+</html>
